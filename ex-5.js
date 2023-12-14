@@ -9,6 +9,7 @@ let getJohnProfile = () => {
     }, 2000);
   })
 }
-getJohnProfile().then((result) => {
-  console.log(result)
-})
+async function getUserProfile() {
+  console.log(await getJohnProfile())
+}
+getUserProfile()

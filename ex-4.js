@@ -11,6 +11,7 @@ let getJohnProfile = () => {
   })
 }
 
-getJohnProfile().then((result) => {
-  console.log(result)
-})
+async function getUserProfile() {
+  console.log(await getJohnProfile())
+}
+getUserProfile()

@@ -28,9 +28,8 @@ let getJohnOrders = () => {
   })
 }
 
-getJohnProfile().then((result) => {
-  console.log(result)
-})
-getJohnOrders().then((result) => {
-  console.log(result)
-})
+async function getUserProfile() {
+  console.log(await getJohnProfile())
+  console.log(await getJohnOrders())
+}
+getUserProfile()
