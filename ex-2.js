@@ -13,3 +13,14 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
+function ProfileJohn(data) {
+  console.log(data);
+}
+
+function onFailure(error) {
+  console.log(error)
+}
+
+getJohnProfile()
+.then(ProfileJohn)
+.catch(onFailure)
